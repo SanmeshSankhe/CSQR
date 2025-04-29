@@ -60,7 +60,7 @@ describe("Calendar Component", () => {
   it("Users should be able to move to the previous and next months", () => {
     render(<Calendar />);
     const prevButton = screen.getByRole('button', { name: 'Previous Month' });
-    const nextButton = screen.getByRole('button', { name: 'Next Month' }); 
+    const nextButton = screen.getByRole('button', { name: 'Next Month' });
 
     fireEvent.click(nextButton);
     expect(screen.getByText("May 2025")).toBeInTheDocument();
